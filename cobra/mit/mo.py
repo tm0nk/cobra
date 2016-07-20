@@ -14,10 +14,12 @@
 
 """The mo module for the ACI Python SDK (cobra)."""
 
+from cobraj.mit.mo import MoType
+
 from cobra.internal.base.moimpl import BaseMo
 
 
-class Mo(BaseMo):
+class Mo(BaseMo, MoType):
 
     """Represents managed objects (MOs).
 
