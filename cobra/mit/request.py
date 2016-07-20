@@ -14,6 +14,8 @@
 
 """The request module for the ACI Python SDK (cobra)."""
 
+from cobraj.mit.request import ConfigRequestType
+
 import json
 from cobra.mit.naming import Dn
 from cobra.internal.codec.jsoncodec import toJSONStr
@@ -1347,7 +1349,7 @@ class AliasRequest(AbstractRequest):
         self.__options['clear'] = "yes"
 
 
-class ConfigRequest(AbstractRequest):
+class ConfigRequest(AbstractRequest, ConfigRequestType):
 
     """Change the configuration.
 
