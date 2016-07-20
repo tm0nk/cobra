@@ -14,10 +14,6 @@
 
 """The naming module for the ACI Python SDK (cobra)."""
 
-# from builtins import next    # pylint:disable=redefined-builtin
-# from builtins import str     # pylint:disable=redefined-builtin
-# from builtins import object  # pylint:disable=redefined-builtin
-
 from cobra.mit.meta import ClassLoader
 from collections import deque
 

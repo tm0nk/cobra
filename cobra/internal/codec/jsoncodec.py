@@ -14,7 +14,6 @@
 
 """The ACI Python SDK json codec module."""
 
-# from builtins import str  # pylint:disable=redefined-builtin
 import json
 from cobra.mit.meta import ClassLoader
 from cobra.internal.codec import (parseMoClassName, getParentDn, buildMo,

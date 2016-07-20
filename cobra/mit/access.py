@@ -20,7 +20,6 @@ interface by which requests are made.
 
 from cobraj.mit.access import MoDirectoryType
 
-# from builtins import object  # pylint:disable=redefined-builtin
 from future.utils import viewitems
 
 from cobra.mit.request import (DnQuery, ClassQuery, CommitError, QueryError,

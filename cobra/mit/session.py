@@ -16,9 +16,6 @@
 
 from cobraj.mit.session import AbstractSessionType
 
-# from builtins import str     # pylint:disable=redefined-builtin
-# from builtins import object  # pylint:disable=redefined-builtin
-
 try:
     from OpenSSL.crypto import FILETYPE_PEM, load_privatekey, sign
 
