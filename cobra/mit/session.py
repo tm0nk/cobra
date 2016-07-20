@@ -14,8 +14,6 @@
 
 """The session module for the ACI Python SDK (cobra)."""
 
-from cobraj.mit.session import AbstractSessionType
-
 try:
     from OpenSSL.crypto import FILETYPE_PEM, load_privatekey, sign
 
@@ -39,7 +37,7 @@ from cobra.mit.request import (LoginRequest, ListDomainsRequest, RefreshRequest,
                                RestError)
 
 
-class AbstractSession(AbstractSessionType):
+class AbstractSession(object):
 
     """Abstract session class.
 
