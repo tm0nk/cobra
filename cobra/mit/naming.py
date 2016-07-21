@@ -14,11 +14,14 @@
 
 """The naming module for the ACI Python SDK (cobra)."""
 
+from cobraj.mit.naming import DnType
+from cobraj.mit.naming import RnType
+
 from cobra.mit.meta import ClassLoader
 from collections import deque
 
 
-class Rn(object):
+class Rn(RnType):
 
     """The relative name (Rn) of the managed object (MO).
 
@@ -243,7 +246,7 @@ class Rn(object):
             return self.__meta.rnFormat
 
 
-class Dn(object):
+class Dn(DnType):
 
     """A Distinguised name class.
 
